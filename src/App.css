@@ -1,0 +1,184 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+/* App.css */
+.App {
+  text-align: center; /* Center align all text within the App component */
+}
+
+h1 {
+  margin-bottom: 20px; /* Optional: add some space below the heading */
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center; /* Center the search bar horizontally */
+  margin-bottom: 20px; /* Space below the search bar */
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 780px; /* Updated to match the alert max-width */
+  padding: 12px 20px; /* Padding for input */
+  border: 1px solid #ddd; /* Border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  font-size: 16px; /* Font size */
+  transition: border-color 0.3s ease; /* Transition for focus */
+}
+
+.search-bar:focus {
+  border-color: #007bff; /* Focus border color */
+  outline: none; /* Remove default outline */
+}
+
+.celebrity-list {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.accordion-container {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0 10px;
+}
+
+.accordion-item {
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+  background-color: #f7f7f7;
+  padding: 15px 25px; /* Increased padding for better spacing */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-header:hover {
+  background-color: #e9ecef;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-image {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.accordion-content {
+  padding: 20px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  display: none; /* Hide content by default */
+}
+
+.accordion-content.active {
+  display: block; /* Show content when active */
+}
+
+.accordion-arrow {
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.accordion-arrow.active {
+  transform: rotate(180deg);
+}
+
+.accordion-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.accordion-actions button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-right: 5px;
+}
+
+.accordion-actions button:hover {
+  background-color: #0056b3;
+}
+
+.btn-red {
+  background-color: red !important;
+}
+
+.alert {
+  width: 100%;
+  max-width: 800px; /* Limit max width for better appearance */
+  margin: 15px auto; /* Center the alert horizontally with auto margins */
+  padding: 12px 20px;
+  border-radius: 5px;
+  background-color: #f8d7da; /* Light red background */
+  color: #721c24; /* Dark red text */
+  border: 1px solid #f5c6cb; /* Border color */
+  text-align: center; /* Center text inside the alert */
+}
+.edit-mode input {
+  margin-bottom: 10px; /* Add bottom margin for spacing between input fields */
+  width: calc(100% - 20px); /* Ensure inputs are responsive and full width */
+  padding: 8px; /* Padding for input fields */
+  border: 1px solid #ddd; /* Consistent border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.accordion-actions {
+  margin-top: 15px; /* Space above the action buttons */
+  display: flex; /* Flexbox for button alignment */
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .accordion-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .accordion-actions {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  /* Additional adjustments for smaller screens */
+  .search-bar {
+    max-width: 100%; /* Ensure search bar takes full width on small screens */
+  }
+
+  .accordion-item {
+    margin-bottom: 10px; /* Reduce bottom margin for smaller screens */
+  }
+}

@@ -1,4 +1,3 @@
-// src/App.jsx
 import React from "react";
 import CelebrityList from "./components/CelebrityList";
 import "./App.css";
@@ -6,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>Celebrity List</h1>
+      <h1 className="mt-3">Celebrity List</h1>
       <CelebrityList />
     </div>
   );
